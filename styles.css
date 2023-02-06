@@ -422,3 +422,70 @@ h5{
     padding:1.18rem;
   }
 
+#tip{
+position:absolute;
+background-color:white;
+width:23rem;
+height:26.5rem;
+left:45vw;
+top:16vh;
+z-index:200;
+}
+
+#tip-title{
+background-color:#1D4D99;
+color:white;
+margin-top:0;
+font-family: 'Inter';
+font-weight: 100;
+padding:0.75rem;
+padding-left:8.5rem;
+}
+
+#tip-content{
+font-size: 1.1rem;
+font-weight:100;
+color:black;
+font-family:'Inter';
+padding-left:0.75rem;
+padding-right:0.75rem;
+}
+
+#tip-image{
+width:21rem;
+padding-left:1rem;
+padding-right:1rem;
+}
+
+#tip-button{
+  font-weight:100;
+  color:white;
+  font-family:Inter;
+  background-color:black;
+  border:none;
+  margin-top:1rem;
+  margin-left:13.5rem;
+  padding-left:3rem;
+  padding-right:3rem;
+  padding-top:0.25rem;
+  padding-bottom:0.25rem;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+#tip-cover{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:100%;
+  width:100%;
+  z-index: 199;
+  opacity:35%;
+  background-color:black;  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
