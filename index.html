@@ -24,7 +24,13 @@
 </div>
 </div>
 
-
+<div id="tip-cover"></div>
+<div id="tip">
+  <h2 id="tip-title">Atlas Tip</h2>
+  <p id="tip-content">Zoom, Search, or Click the map to see neighborhood data</p>
+  <img id="tip-image" src="tip-img.png">
+  <button id="tip-button" onclick="removeTip()">Okay</button>
+</div>
 
   <div id="geocoder" class="geocoder"></div>
     <div class="body">
@@ -105,10 +111,7 @@
             <input type="radio" name="radio" value="option15" onclick="checkboxClick(this);colorSwitch(layers_dict['housing_burden'])">
             <span class="checkmark"></span>
           </label>
-          <label class="container">Energy Burden
-            <input type="radio" name="radio" value="option15" onclick="checkboxClick(this);colorSwitch(layers_dict['energy_burden'])">
-            <span class="checkmark"></span>
-          </label>
+
         </div>
     </div>
     <div id="2env-health" style="display:none;">
