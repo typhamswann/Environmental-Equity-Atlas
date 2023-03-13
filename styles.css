@@ -489,3 +489,226 @@ padding-right:1rem;
   -o-background-size: cover;
   background-size: cover;
 }
+
+.icon-img{
+  position:relative;
+  width:0.8rem;
+  padding:0;
+  margin:0;
+
+}
+
+/*
+*/
+.tooltip {
+  position: relative;
+  top:0.07rem;
+  left:0.5rem;
+  display: inline-block;
+}
+
+.tooltiptext {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -3.3rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltip #one::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #1d4d99 transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-a1 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-a2 {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptext-b1 {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptext-b2 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b3 {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptext-b4 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b5 {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptext-b6 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b7 {
+  visibility: visible;
+}
+
+.tooltiptext-a1 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -2.8rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-a2 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -2.3rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b1 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -3.8rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b2 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -4.45rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b3 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -4.95rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b4 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -5.5rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b5 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -6rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b6 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -6.3rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b7 {
+  font-family: 'Inter';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -6.65rem;
+  left: 130%;
+  font-size:0.9rem;
+}

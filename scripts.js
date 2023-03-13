@@ -2,6 +2,7 @@ window.onload = function() {
     var div1 = document.getElementById("1home");
     var firstRadio = div1.getElementsByTagName("input")[0];
     firstRadio.checked = true;
+   // document.getElementById('cover').style.display = 'none'
 }
 
 function round(value, precision) {
@@ -30,6 +31,8 @@ function switchDiv() {
     var div8 = document.getElementById("8cejs-status");
     var div9 = document.getElementById("9thresh-1");
     var div10 = document.getElementById("10thresh-2");
+    var div11 = document.getElementById("11thresh-3");
+
 
     div1.style.display = "none";
     div2.style.display = "none";
@@ -41,6 +44,8 @@ function switchDiv() {
     div8.style.display = "none";
     div9.style.display = "none";
     div10.style.display = "none";
+    div11.style.display = "none";
+
     
     if (selected === "1home") {
       colorSwitch(layers_dict['env_index'])
@@ -72,6 +77,9 @@ function switchDiv() {
     } else if (selected === "10thresh-2") {
       colorSwitch(layers_dict['th_impervious_inc'])
       div10.style.display = "block";
+    } else if (selected === "11thresh-3") {
+      colorSwitch(layers_dict['th_underinvestment_inc'])
+      div11.style.display = "block";
     }
     //uncheck all the radio inputs
     var checkboxes = document.getElementsByName("radio");
@@ -272,8 +280,8 @@ map.once('idle', () =>{
 })
 
 function hideCover(){
-  document.getElementById('cover').style.display = 'none'
-  }
+document.getElementById('cover').style.display = 'none'
+}
 
 function colorSwitch(layer){
 activeLayer = layer
