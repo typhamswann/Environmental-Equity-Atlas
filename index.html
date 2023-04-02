@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;900&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
 <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
@@ -16,10 +21,31 @@
 <div id="cover">
   <div id="main">
     <h1 id="title-main">The Environmental Equity Atlas</h1>
-    <p id="par">The most disadvantaged Americans often face the worst environmental conditions, substantially reducing both health and lifespan.</p>
-    <p id="par">See how disproportionate environmental costs burden residents of different neighborhoods across the United States.</p>
+
+    <div class="images">
+      <div class="comp-img">
+        <img class="img" src="miami-black.jpg" />
+        <div class="caption">Black Population in Miami, FL</div>
+      </div>
+      <div class="comp-img">
+        <img class="img" src="miami-asthma.jpg" />
+        <div class="caption">Asthma Rate in Miami, FL</div>
+      </div>
+    </div>
+    <div class="images">
+      <div class="comp-img">
+        <img class="img" src="la-hispanic.jpg" />
+        <div class="caption">Hispanic Population in Los Angeles, CA</div>
+      </div>
+      <div class="comp-img">
+        <img class="img" src="la-heat.jpg" />
+        <div class="caption">Urban Heat Effect in Los Angeles, CA</div>
+      </div>
+    </div>
+    
+    <p id="par">The most disadvantaged Americans often face the worst environmental conditions, substantially reducing both health and lifespan. See how disproportionate environmental costs burden residents of different neighborhoods across the United States.</p>
     <img id="spin" src="spin.gif"> 
-    <button id="load-button" onclick="hideCover();" >Explore</button>
+    <button id="load-button" onclick="hideCover();" >Explore Your Community</button>
     <a id="bottom-link-3" href="about.html"><h5 id="to-underline">Methods and References</h5></a>
 </div>
 </div>
@@ -62,7 +88,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
             <img src="info-icon.png" class="icon-img">
-            <span class="tooltiptext-b7" id="one">An aggregate environmental health statistic calculated as the average of a tract or county's percentile values for energy burden, low life expectancy, adult asthma rate, PM2.5 pollution, Diesel particulate pollution, DOT Travel Barriers, Lead Paint Risk, Proximity to NPL Superfund sites, CEJST threshold criteria exceeded, and adult coronary heart disease rate. <br><br>Source: EPA, EJScreen, DOT, CDC, CEJST
+            <span class="tooltiptext-b5" id="one">An aggregate environmental health statistic calculated as the average of a tract or county's percentile values for energy burden, low life expectancy, adult asthma rate, PM2.5 pollution, Diesel particulate pollution, DOT Travel Barriers, Lead Paint Risk, Proximity to NPL Superfund sites, CEJST threshold criteria exceeded, and adult coronary heart disease rate. <br><br>Source: EPA, EJScreen, DOT, CDC, CEJST
             </span>
           </div>
           </label>
@@ -72,7 +98,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
             <img src="info-icon.png" class="icon-img">
-            <span class="tooltiptext" id="one">Percent of the population who identifies as White. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+            <span class="tooltiptext-a2" id="one">Percent of the population who identifies as White. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
             </span>
           </div>
           </label>
@@ -81,7 +107,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as Black or African American. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies as Black or African American. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -90,7 +116,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as Hispanic. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies as Hispanic. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -99,7 +125,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b2" id="one">Percent of the population below the 200% poverty line (approximately $26k/yr for an individual) after excluding students enrolled in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext" id="one">Percent of the population below the 200% poverty line (approximately $26k/yr for an individual) after excluding students enrolled in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -108,7 +134,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-a1" id="one">Median home value in dollars. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a3" id="one">Median home value in dollars. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
 
               </span>
             </div>
@@ -160,7 +186,7 @@
               </span>
             </div>
           </label>
-          <label class="container">Fire Risk
+          <label class="container" id="drop2">Fire Risk
             <input type="radio" name="radio" value="option14" onclick="checkboxClick(this);colorSwitch(layers_dict['fire_risk'])">
             <span class="checkmark"></span>
             <div class="tooltip">
@@ -169,7 +195,7 @@
               </span>
             </div>
           </label>
-          <label class="container">Housing Burden
+          <label class="container" id="drop">Housing Burden
             <input type="radio" name="radio" value="option15" onclick="checkboxClick(this);colorSwitch(layers_dict['housing_burden'])">
             <span class="checkmark"></span>
             <div class="tooltip">
@@ -189,7 +215,7 @@
           <span class="checkmark"></span>
           <div class="tooltip">
             <img src="info-icon.png" class="icon-img">
-            <span class="tooltiptext-b7" id="one">An aggregate environmental health statistic calculated as the average of a tract or county's percentile values for energy burden, low life expectancy, adult asthma rate, PM2.5 pollution, Diesel particulate pollution, DOT Travel Barriers, Lead Paint Risk, Proximity to NPL Superfund sites, CEJST threshold criteria exceeded, and adult coronary heart disease rate. <br><br>Source: EPA, EJScreen, DOT, CDC, CEJST
+            <span class="tooltiptext-b5" id="one">An aggregate environmental health statistic calculated as the average of a tract or county's percentile values for energy burden, low life expectancy, adult asthma rate, PM2.5 pollution, Diesel particulate pollution, DOT Travel Barriers, Lead Paint Risk, Proximity to NPL Superfund sites, CEJST threshold criteria exceeded, and adult coronary heart disease rate. <br><br>Source: EPA, EJScreen, DOT, CDC, CEJST
             </span>
           </div>
         </label>
@@ -301,7 +327,7 @@
               </span>
             </div>
           </label>
-          <label class="container">Leaky Underground Storage Tanks
+          <label class="container" id="drop3">Leaky Underground Storage Tanks
             <input type="radio" name="radio" value="option14" onclick="checkboxClick(this);colorSwitch(layers_dict['storage_tanks'])">
             <span class="checkmark"></span>
             <div class="tooltip">
@@ -338,7 +364,7 @@
           <span class="checkmark"></span>
           <div class="tooltip">
             <img src="info-icon.png" class="icon-img">
-            <span class="tooltiptext-b1" id="one">Percent of people 25 or older with less education whose high school education is less than a high school diploma. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+            <span class="tooltiptext" id="one">Percent of people 25 or older with less education whose high school education is less than a high school diploma. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
             </span>
           </div>
         </label>
@@ -347,7 +373,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of students not currently in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of students not currently in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -374,7 +400,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-a1" id="one">Median home value in dollars. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a2" id="one">Median home value in dollars. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -383,7 +409,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-a2" id="one">Reported rent cost for residents. <br><br>Source: Benz and Burney (2021)
+              <span class="tooltiptext-a3" id="one">Reported rent cost for residents. <br><br>Source: Benz and Burney (2021)
               </span>
             </div>
           </label>
@@ -392,7 +418,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of homes where nobody over age 14 speaks English very well. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of homes where nobody over age 14 speaks English very well. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -474,7 +500,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b4" id="one">Percent of agriculture value at risk due to fourteen main natural hazards (avalanche, coastal flooding, cold wave, drought, hail, heat wave, hurricane, ice storm, landslide, riverine flooding, strong wind, tornado, wildfire, and winter weather), many of which are associated with climate change. <br><br>Source: FEMA via CEJST
+              <span class="tooltiptext-b3" id="one">Percent of agriculture value at risk due to fourteen main natural hazards (avalanche, coastal flooding, cold wave, drought, hail, heat wave, hurricane, ice storm, landslide, riverine flooding, strong wind, tornado, wildfire, and winter weather), many of which are associated with climate change. <br><br>Source: FEMA via CEJST
               </span>
             </div>
           </label>
@@ -483,7 +509,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b4" id="one">Percent of building value at risk due to fourteen main natural hazards (avalanche, coastal flooding, cold wave, drought, hail, heat wave, hurricane, ice storm, landslide, riverine flooding, strong wind, tornado, wildfire, and winter weather), many of which are associated with climate change. <br><br>Source: FEMA via CEJST
+              <span class="tooltiptext-b3" id="one">Percent of building value at risk due to fourteen main natural hazards (avalanche, coastal flooding, cold wave, drought, hail, heat wave, hurricane, ice storm, landslide, riverine flooding, strong wind, tornado, wildfire, and winter weather), many of which are associated with climate change. <br><br>Source: FEMA via CEJST
               </span>
             </div>
           </label>
@@ -506,7 +532,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b2" id="one">Percent of the population below the 200% poverty line (approximately $26k/yr for an individual) after excluding students enrolled in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext" id="one">Percent of the population below the 200% poverty line (approximately $26k/yr for an individual) after excluding students enrolled in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
             </div>
           </label>
           <label class="container">Unemployment Rate
@@ -514,7 +540,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the labor force that is without unemployment. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the labor force that is without unemployment. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -523,7 +549,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b3" id="one">Tract or county is at or above the 65th percentile for percent of the population below the 200% poverty line (approximately $26k/yr for an individual) after excluding students in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST.
+              <span class="tooltiptext-b2" id="one">Tract or county is at or above the 65th percentile for percent of the population below the 200% poverty line (approximately $26k/yr for an individual) after excluding students in higher education. <br><br>Source: US Census’s ACS (2015-2019) via CEJST.
               </span>
             </div>
           </label>
@@ -532,7 +558,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Income is estimated from a neighboring census tract due to lack of data. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Income is estimated from a neighboring census tract due to lack of data. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -541,7 +567,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b1" id="one">2019 median household income divided by the 2019 median household income of neighboring census tracts. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext" id="one">2019 median household income divided by the 2019 median household income of neighboring census tracts. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -550,7 +576,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b1" id="one">Percent of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -559,7 +585,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b1" id="one">Percent of the population below the 100% poverty line (approximately $13k/yr for an individual). <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population below the 100% poverty line (approximately $13k/yr for an individual). <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -591,7 +617,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as White. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a2" id="one">Percent of the population who identifies as White. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -600,7 +626,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as Black or African American. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies as Black or African American. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -609,7 +635,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as Hispanic. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies as Hispanic. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -618,7 +644,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as Asian. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a2" id="one">Percent of the population who identifies as Asian. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -627,7 +653,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as American Indian or Alaskan Native. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies as American Indian or Alaskan Native. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -636,7 +662,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies as Native Hawaiin or Pacific. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies as Native Hawaiin or Pacific. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -645,7 +671,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies with two or more races. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies with two or more races. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -654,7 +680,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who identifies race as other. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who identifies race as other. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -663,7 +689,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who are under 10 years old. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who are under 10 years old. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -672,7 +698,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-a1" id="one">Percent of the population who are aged 10-64. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a2" id="one">Percent of the population who are aged 10-64. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -681,7 +707,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percent of the population who are older than 65 years old. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percent of the population who are older than 65 years old. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -690,7 +716,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext" id="one">Percentage of tract area that overlaps with federally designated tribal land. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a1" id="one">Percentage of tract area that overlaps with federally designated tribal land. <br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -699,7 +725,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-a1" id="one">Total population of census tract / county<br><br>Source: US Census’s ACS (2015-2019) via CEJST
+              <span class="tooltiptext-a2" id="one">Total population of census tract / county<br><br>Source: US Census’s ACS (2015-2019) via CEJST
               </span>
             </div>
           </label>
@@ -740,7 +766,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b3" id="one">Census tract exceeds at least one environmental, climate, socioeconomic or other burden without consideration of neighboring census tracts per the White House’s Climate and Economic Justice Screening Tool. <br><br>Source: CEJST
+              <span class="tooltiptext-b2" id="one">Census tract exceeds at least one environmental, climate, socioeconomic or other burden without consideration of neighboring census tracts per the White House’s Climate and Economic Justice Screening Tool. <br><br>Source: CEJST
               </span>
             </div>
           </label>
@@ -798,7 +824,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b4" id="one">Census tract is at or above 90th percentile for barriers to mobility and transportation access and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, DOT, US Census’s ACS (2015-2019)
+              <span class="tooltiptext-b3" id="one">Census tract is at or above 90th percentile for barriers to mobility and transportation access and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, DOT, US Census’s ACS (2015-2019)
               </span>
             </div>
           </label>
@@ -928,7 +954,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b4" id="one">Census tract is at or above 90th percentile for share of the population below the 200% poverty line (approximately $26k/yr/year for an individual) and is at or above the 90th percentile for the share of the population older than 25 years old with less than a high school education. <br><br>Source: CEJST, US Census’s ACS (2015-2019)
+              <span class="tooltiptext-b3" id="one">Census tract is at or above 90th percentile for share of the population below the 200% poverty line (approximately $26k/yr/year for an individual) and is at or above the 90th percentile for the share of the population older than 25 years old with less than a high school education. <br><br>Source: CEJST, US Census’s ACS (2015-2019)
               </span>
             </div>
           </label>
@@ -937,7 +963,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b5" id="one">Census tract is at or above 90th percentile for the percent of the population at risk of death or injury due to the fourteen main natural hazards and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, FEMA, US Census’s ACS (2015-2019)
+              <span class="tooltiptext-b4" id="one">Census tract is at or above 90th percentile for the percent of the population at risk of death or injury due to the fourteen main natural hazards and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, FEMA, US Census’s ACS (2015-2019)
               </span>
             </div>
           </label>
@@ -1034,7 +1060,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b5" id="one">Census tract is at or above 90th percentile for the average modeled concentrations of chemical toxins in streams within 500 meters and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, EPA, EJScreen, US Census’s ACS (2015-2019)
+              <span class="tooltiptext-b4" id="one">Census tract is at or above 90th percentile for the average modeled concentrations of chemical toxins in streams within 500 meters and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, EPA, EJScreen, US Census’s ACS (2015-2019)
               </span>
             </div>
           </label>
@@ -1052,7 +1078,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b4" id="one">Census tract is at or above 90th percentile for adult coronary heart disease and angina rate and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, CDC, US Census’s ACS (2015-2019)
+              <span class="tooltiptext-b3" id="one">Census tract is at or above 90th percentile for adult coronary heart disease and angina rate and is at or above the 65th percentile for the share of the population below the 200% poverty line (approximately $26k/yr for an individual). <br><br>Source: CEJST, CDC, US Census’s ACS (2015-2019)
               </span>
             </div>
           </label>
@@ -1061,7 +1087,7 @@
             <span class="checkmark"></span>
             <div class="tooltip">
               <img src="info-icon.png" class="icon-img">
-              <span class="tooltiptext-b3" id="one">Census tract is at or below 10th percentile median household income relative to nearby census tracts and is at or above the 90th percentile for the share of the population older than 25 years old with less than a high school education. <br><br>Source: CEJST, US Census’s ACS (2015-2019)
+              <span class="tooltiptext-b2" id="one">Census tract is at or below 10th percentile median household income relative to nearby census tracts and is at or above the 90th percentile for the share of the population older than 25 years old with less than a high school education. <br><br>Source: CEJST, US Census’s ACS (2015-2019)
               </span>
             </div>
           </label>

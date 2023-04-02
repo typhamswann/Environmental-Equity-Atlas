@@ -71,7 +71,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: 'Inter';
+    font-family: 'Roboto';
     padding-top:0rem;
   }
   
@@ -134,7 +134,7 @@ select{
     padding-bottom:0.3rem;
     padding-left:1rem;
     border: none; 
-    font-family: 'Inter';
+    font-family: 'Roboto';
     font-weight:500;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -147,7 +147,7 @@ select{
 .section-title{
     color:#1D4D99;
     font-weight:600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:1.3rem;
     padding-top:0.7rem;
     padding-bottom:1rem;
@@ -158,7 +158,7 @@ select{
 .title{
     color:white;
     font-weight:600;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size:1.5rem;
     padding-left:5.3rem;
     padding-top:1rem;
@@ -202,14 +202,14 @@ z-index: -1;
     bottom:0;
     left:0;
     color:white;
-    font-family: "Inter";
+    font-family: 'Roboto';
     font-weight:600;
     display:inline-block;
     padding-left:1rem;
     padding-right:1rem;
-    padding-top:0.6rem;
+    padding-top:0rem;
     padding-bottom:0rem;
-    margin-bottom:0.8rem;
+    margin-bottom:0.85rem;
 }
 
 .bottom-links{
@@ -235,7 +235,7 @@ z-index: -1;
 
 h5{
   font-weight:100;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #zoom-tract-info{
@@ -298,7 +298,7 @@ h5{
   position:absolute;
   left:21rem;
   top:13.75rem;
-  font-family: 'Inter';
+  font-family: 'Roboto';
   color:#1D4D99;
   font-size:1.3rem;
   font-weight:600;
@@ -308,7 +308,7 @@ h5{
   position:absolute;
   left:20.5rem;
   top:2.4rem;
-  font-family: 'Inter';
+  font-family: 'Roboto';
   color: #1D4D99;
   font-size:1rem;
   font-weight:600;
@@ -328,7 +328,7 @@ h5{
   position:absolute;
   left:32.45rem;
   top:11rem;
-  font-family: 'Inter';
+  font-family: 'Roboto';
   color:#000;
   font-size:0.9rem;
   font-weight:600;
@@ -338,7 +338,7 @@ h5{
   position:absolute;
   left:32.45rem;
   top:5rem;
-  font-family: 'Inter';
+  font-family: 'Roboto';
   color:#000;
   font-size:0.9rem;
   font-weight:600;
@@ -358,34 +358,62 @@ h5{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: Inter;
+    font-family: 'Roboto';
     }
 
 
   #main{
     background: rgba(255, 255, 255, 0.8);
     text-align:center;
-    margin-left:34vw;
-    margin-right:34vw;
-    margin-top: 25vh;
+    margin-left:10vw;
+    margin-right:10vw;
+    margin-top: 0vh;
+    height: 100vh;
   }
 
   #title-main{
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+    font-family: 'Merriweather';
+    font-weight: 700;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top:2rem;
     font-weight:200;
-    font-size:1.7rem;
+    font-size:2.7rem;
     padding-bottom: 0;
     margin-bottom:0;
+    margin-top:0
   }
 
+  .comp-img {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .img {
+    width: 17rem;
+  }
+  
+  .images {
+    text-align: center;
+  }
+  
+  .caption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 0.5rem;
+    font-weight:bold;
+  }
+  
+
   #par{
+    font-size:0.95rem;
     text-align: left;
-    padding-left:2rem;
-    padding-right:2rem;
-    padding-top:0.5rem;
+    padding-left:12rem;
+    padding-right:12rem;
+    padding-top:0rem;
     padding-bottom:0rem;
   }
 
@@ -393,15 +421,15 @@ h5{
     display:none;
     font-weight:100;
     color:white;
-    font-family:Inter;
+    font-family:'Roboto';
     background-color:black;
     opacity: 100% !important;
     border:none;
     margin-top:1rem;
     padding-left:6rem;
     padding-right:6rem;
-    padding-top:1rem;
-    padding-bottom:1rem;
+    padding-top:0.7rem;
+    padding-bottom:0.7rem;
     font-size: 1.5rem;
     cursor:pointer;
   }
@@ -415,11 +443,12 @@ h5{
   #bottom-link-3{
     text-decoration: none;
     color:black;
+    margin-bottom:5rem;
   }
 
   #spin{
     width:2.5rem;
-    padding:1.18rem;
+    padding:0.845rem;
   }
 
 #tip{
@@ -436,7 +465,7 @@ z-index:200;
 background-color:#1D4D99;
 color:white;
 margin-top:0;
-font-family: 'Inter';
+font-family: 'Roboto';
 font-weight: 100;
 padding:0.75rem;
 padding-left:8.5rem;
@@ -446,7 +475,7 @@ padding-left:8.5rem;
 font-size: 1.1rem;
 font-weight:100;
 color:black;
-font-family:'Inter';
+font-family:'Roboto';
 padding-left:0.75rem;
 padding-right:0.75rem;
 }
@@ -460,7 +489,7 @@ padding-right:1rem;
 #tip-button{
   font-weight:100;
   color:white;
-  font-family:Inter;
+  font-family:'Roboto';
   background-color:black;
   border:none;
   margin-top:1rem;
@@ -508,7 +537,7 @@ padding-right:1rem;
 }
 
 .tooltiptext {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -544,6 +573,11 @@ padding-right:1rem;
 .tooltip:hover .tooltiptext-a2 {
   visibility: visible;
 }
+
+.tooltip:hover .tooltiptext-a3 {
+  visibility: visible;
+}
+
 .tooltip:hover .tooltiptext-b1 {
   visibility: visible;
 }
@@ -568,9 +602,31 @@ padding-right:1rem;
 .tooltip:hover .tooltiptext-b7 {
   visibility: visible;
 }
+.tooltip:hover .tooltiptext-b8 {
+  visibility: visible;
+}
+.tooltip:hover .tooltiptext-b9 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b10 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b11 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b12 {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltiptext-b13 {
+  visibility: visible;
+}
 
 .tooltiptext-a1 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -586,7 +642,7 @@ padding-right:1rem;
 }
 
 .tooltiptext-a2 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -596,13 +652,28 @@ padding-right:1rem;
   padding: 1rem;
   position: absolute;
   z-index: 1;
-  top: -2.3rem;
+  top: -2.25rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+.tooltiptext-a3 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -2.18rem;
   left: 130%;
   font-size:0.9rem;
 }
 
 .tooltiptext-b1 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -618,7 +689,7 @@ padding-right:1rem;
 }
 
 .tooltiptext-b2 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -634,7 +705,7 @@ padding-right:1rem;
 }
 
 .tooltiptext-b3 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -650,7 +721,7 @@ padding-right:1rem;
 }
 
 .tooltiptext-b4 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -666,7 +737,7 @@ padding-right:1rem;
 }
 
 .tooltiptext-b5 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -676,13 +747,13 @@ padding-right:1rem;
   padding: 1rem;
   position: absolute;
   z-index: 1;
-  top: -6rem;
+  top: -5.95rem;
   left: 130%;
   font-size:0.9rem;
 }
 
 .tooltiptext-b6 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -698,7 +769,7 @@ padding-right:1rem;
 }
 
 .tooltiptext-b7 {
-  font-family: 'Inter';
+  font-family: 'Roboto';
   visibility: hidden;
   width: 20rem;
   background-color: #1d4d99;
@@ -712,3 +783,246 @@ padding-right:1rem;
   left: 130%;
   font-size:0.9rem;
 }
+
+.tooltiptext-b8 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -7rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+.tooltiptext-b9 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -7.35rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b10 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -7.7rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b11 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -8.05rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b12 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -8.4rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+.tooltiptext-b13 {
+  font-family: 'Roboto';
+  visibility: hidden;
+  width: 20rem;
+  background-color: #1d4d99;
+  color: white;
+  text-align: left;
+  border-radius: 6px;
+  padding: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -8.75rem;
+  left: 130%;
+  font-size:0.9rem;
+}
+
+@media screen and (max-width: 1400px) {
+  #par {
+    font-size:0.9rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #par {
+    font-size:0.8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #par {
+    padding-left: 15rem;  
+    padding-right: 15rem;  
+}
+}
+
+@media screen and (min-width: 1600px) {
+  #par {
+    padding-left: 20rem;  
+    padding-right: 20rem;  
+}
+}
+
+@media screen and (max-height: 700px) {
+.img{
+  width:16rem;
+}
+}
+
+@media screen and (max-height: 680px) {
+  #title-main{
+    font-size: 2.4rem;
+  }
+  }
+
+  @media screen and (max-height: 665px) {
+    #drop{
+      visibility: hidden;
+    }
+
+    #title-main{
+      font-size: 2.2rem;
+    }
+    .img{
+      width:15rem;
+    }
+    }
+
+@media screen and (max-height: 650px) {
+
+  .img{
+    width:14rem;
+  }
+  }
+
+  @media screen and (max-height: 640px) {
+
+    #title-main{
+      font-size: 2rem;
+    }
+
+      #load-button{
+        display:none;
+        font-weight:100;
+        color:white;
+        font-family:'Roboto';
+        background-color:black;
+        opacity: 100% !important;
+        border:none;
+        margin-top:1rem;
+        padding-left:6rem;
+        padding-right:6rem;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+        font-size: 1.3rem;
+        cursor:pointer;
+      }
+      #drop2{
+        visibility: hidden;
+      }
+      #drop3{
+        visibility: hidden;
+      }
+
+      }
+
+      @media screen and (max-height: 620px) {
+
+
+        #title-main{
+          font-size: 1.8rem;
+        }
+    
+          #load-button{
+            display:none;
+            font-weight:100;
+            color:white;
+            font-family:'Roboto';
+            background-color:black;
+            opacity: 100% !important;
+            border:none;
+            margin-top:1rem;
+            padding-left:6rem;
+            padding-right:6rem;
+            padding-top:0.4rem;
+            padding-bottom:0.4rem;
+            font-size: 1.1rem;
+            cursor:pointer;
+          }
+    
+          }
+
+          @media screen and (max-height: 610px) {
+
+            #par{
+              font-size:0.8rem;
+            }
+
+            #title-main{
+              font-size: 1.7rem;
+            }
+        
+              #load-button{
+                display:none;
+                font-weight:100;
+                color:white;
+                font-family:'Roboto';
+                background-color:black;
+                opacity: 100% !important;
+                border:none;
+                margin-top:1rem;
+                padding-left:4rem;
+                padding-right:4rem;
+                padding-top:0.35rem;
+                padding-bottom:0.35rem;
+                font-size: 1rem;
+                cursor:pointer;
+              }
+        
+              }
+
+              @media screen and (max-height: 600px) {
+                .img{width:13rem;}
+              }
