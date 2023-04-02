@@ -879,6 +879,11 @@ padding-right:1rem;
   font-size:0.9rem;
 }
 
+.hide{
+  color:white;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1400px) {
   #par {
     font-size:0.9rem;
@@ -1026,3 +1031,4 @@ padding-right:1rem;
               @media screen and (max-height: 600px) {
                 .img{width:13rem;}
               }
+
