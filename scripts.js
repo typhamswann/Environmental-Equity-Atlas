@@ -1,3 +1,5 @@
+
+
 window.onload = function() {
     var div1 = document.getElementById("1home");
     var firstRadio = div1.getElementsByTagName("input")[0];
