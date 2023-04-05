@@ -1,12 +1,13 @@
-
 #map { 
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    right:0;
-    left: 20rem; 
-    width: 78vw; 
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  right: 0;
+  left: 20rem; 
+  width: calc(100% - 20rem); 
 }
+
+html,body { padding:0; margin:0;}
 
 .mapboxgl-popup-content {
   background-color: #1D4D99 !important;

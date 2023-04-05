@@ -228,11 +228,9 @@ map.addLayer({
 
 
 map.addControl(new mapboxgl.NavigationControl({
-  showCompass: false
+  showCompass: false,
 }
-));
-
-
+), 'top-right');
 
 map.addControl(new mapboxgl.AttributionControl({
 customAttribution: 'Developed by Ty Pham-Swann'
